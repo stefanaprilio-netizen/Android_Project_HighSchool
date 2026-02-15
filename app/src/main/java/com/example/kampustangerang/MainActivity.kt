@@ -19,63 +19,33 @@ class MainActivity : AppCompatActivity() {
                 "Universitas Multimedia Nusantara (UMN)",
                 "Gading Serpong, Tangerang",
                 "Fokus pada bidang teknologi informasi dan komunikasi.",
-                "Dr. Ninok Leksono, M.A.",
                 "https://www.umn.ac.id/wp-content/uploads/2021/02/Gedung-UMN.jpg",
-                listOf(
-                    Faculty("Fakultas Teknik & Informatika", "Dr. Eng. Niki Prastomo", listOf(
-                        StudyProgram("Informatika", "Marlin, S.Kom., M.T."),
-                        StudyProgram("Sistem Informasi", "Ririen Setiati, S.Kom., M.M.")
-                    )),
-                    Faculty("Fakultas Bisnis", "Dr. Florentina, S.E., M.Si.", listOf(
-                        StudyProgram("Manajemen", "Dr. Mohammad Annas"),
-                        StudyProgram("Akuntansi", "Stefanus Ariyanto, S.E., M.Ak.")
-                    ))
-                )
+                "Perpustakaan modern, Studio TV, Laboratorium iMac, Sport Hall",
+                "1 Oktober 2023 - 31 Desember 2023"
             ),
             Campus(
                 "Universitas Pelita Harapan (UPH)",
                 "Lippo Village, Karawaci, Tangerang",
                 "Salah satu universitas swasta ternama dengan berbagai program studi internasional.",
-                "Dr. (Hon) Jonathan L. Parapak, M.Eng.Sc.",
                 "https://www.uph.edu/wp-content/uploads/2023/05/UPH-Tower-scaled.jpg",
-                listOf(
-                    Faculty("Fakultas Hukum", "Dr. Velliana Tanaya, S.H., M.H.", listOf(
-                        StudyProgram("Ilmu Hukum", "Dr. Susi Susantijo")
-                    )),
-                    Faculty("Fakultas Kedokteran", "Prof. Dr. Dr. dr. Eka J. Wahjoepramono", listOf(
-                        StudyProgram("Kedokteran", "dr. Beverley W. Anne")
-                    ))
-                )
+                "Museum, Kolam Renang Olympic, Lapangan Sepak Bola, Concert Hall",
+                "1 September 2023 - 30 November 2023"
             ),
             Campus(
                 "BINUS University",
                 "Alam Sutera, Tangerang",
                 "Kampus modern dengan fokus pada inovasi dan teknologi.",
-                "Dr. Nelly, S.Kom., M.M.",
                 "https://bulatankata.com/wp-content/uploads/2022/10/binus-alsut.jpg",
-                listOf(
-                    Faculty("School of Computer Science", "Fredy Purnomo, S.Kom., M.Kom.", listOf(
-                        StudyProgram("Computer Science", "Derwin Suhartono, S.Kom., M.T.I.")
-                    )),
-                    Faculty("School of Design", "Danendro Adi, S.Sn., M.Arts.", listOf(
-                        StudyProgram("Visual Communication Design", "Arsa Widitiarsa Utoyo")
-                    ))
-                )
+                "Smart Classrooms, Creative Room, Kantin Higienis, Laboratorium Riset",
+                "15 Oktober 2023 - 15 Januari 2024"
             ),
             Campus(
                 "Universitas Pamulang (UNPAM)",
                 "Pamulang, Tangerang Selatan",
                 "Universitas dengan jumlah mahasiswa terbanyak yang mengedepankan pendidikan terjangkau.",
-                "Dr. E. Nurzaman AM., M.M., M.Si.",
                 "https://unpam.ac.id/wp-content/uploads/2021/03/unpam-viktor.jpg",
-                listOf(
-                    Faculty("Fakultas Ekonomi", "Dr. H. Endang Ruhiyat", listOf(
-                        StudyProgram("Manajemen", "Dr. Ali Maddinsyah")
-                    )),
-                    Faculty("Fakultas Teknik", "Syaiful Bakhri, S.T., M.Eng., Ph.D.", listOf(
-                        StudyProgram("Teknik Informatika", "Achmad Udin Zailani, S.Kom., M.Kom.")
-                    ))
-                )
+                "Masjid Kampus, Laboratorium Praktik, Kantin Murah, Parkir Luas",
+                "1 Desember 2023 - 28 Februari 2024"
             )
         )
 

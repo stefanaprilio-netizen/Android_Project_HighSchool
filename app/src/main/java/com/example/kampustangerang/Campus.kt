@@ -4,21 +4,12 @@ data class Campus(
     val name: String,
     val location: String,
     val description: String,
-    val rector: String,
-    val imageUrl: String = "",
-    val faculties: List<Faculty> = emptyList()
-) {
-    constructor(
-        name: String,
-        location: String,
-        description: String,
-        url: String,
-        imageUrl: String,
-        s6: String
-    ) : this() {
-
-    }
-}
+    val imageUrl: String,
+    val facilities: String,
+    val registrationDate: String,
+    val rector: String = "",
+    val facultiesList: List<Faculty> = emptyList()
+)
 
 data class Faculty(
     val name: String,

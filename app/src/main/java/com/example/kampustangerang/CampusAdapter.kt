@@ -20,13 +20,10 @@ class CampusAdapter(private val campusList: List<Campus>) :
         val campus = campusList[position]
         holder.binding.apply {
             tvCampusName.text = campus.name
-            tvRector.text = "Rektor: ${campus.rector}"
             tvCampusLocation.text = campus.location
-            
-            val facultiesInfo = campus.faculties.joinToString("\n") { faculty ->
-                "• ${faculty.name} (Dekan: ${faculty.dean})\n  Prodi: ${faculty.studyPrograms.joinToString { it.name }}"
-            }
-            tvFacultiesSummary.text = facultiesInfo
+            tvCampusDescription.text = campus.description
+            tvFacilities.text = campus.facilities
+            tvRegistrationDate.text = campus.registrationDate
 
             Glide.with(holder.itemView.context)
                 .load(campus.imageUrl)
