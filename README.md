@@ -5,9 +5,9 @@ Aplikasi Android sederhana yang menampilkan daftar perguruan tinggi ternama di w
 ## 🚀 Fitur Utama
 
 - **Daftar Kampus Lengkap**: Menampilkan berbagai universitas besar seperti UMN, UPH, BINUS, UNPAM, dan lainnya.
-- **Visual Modern**: Menggunakan `CardView` dan `Material Design` untuk tampilan yang bersih dan intuitif.
+- **Visual Modern**: Menggunakan `MaterialCardView` dan `Material Design` untuk tampilan yang bersih dan intuitif.
 - **Gambar Online**: Mengintegrasikan library `Glide` untuk memuat foto gedung kampus secara real-time dari internet.
-- **Informasi Singkat**: Menyediakan nama, lokasi spesifik, dan deskripsi singkat mengenai fokus pendidikan setiap kampus.
+- **Informasi Detail**: Menyediakan nama, lokasi, deskripsi, **daftar fasilitas**, serta **jadwal pendaftaran** setiap kampus.
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -20,10 +20,12 @@ Aplikasi Android sederhana yang menampilkan daftar perguruan tinggi ternama di w
 ## 📸 Tampilan Aplikasi
 
 Aplikasi menampilkan daftar dalam bentuk kartu yang berisi:
-1. Foto Kampus
-2. Nama Universitas
-3. Lokasi (Kabupaten/Kota)
-4. Deskripsi singkat
+1. **Foto Kampus**: Visual gedung universitas.
+2. **Nama Universitas**: Identitas kampus.
+3. **Lokasi**: Area spesifik di Tangerang/Tangerang Selatan.
+4. **Deskripsi**: Fokus pendidikan atau keunggulan kampus.
+5. **Fasilitas**: Daftar sarana prasarana yang tersedia.
+6. **Tanggal Pendaftaran**: Informasi periode pendaftaran yang dibuka.
 
 ## ⚙️ Cara Menjalankan Proyek
 
