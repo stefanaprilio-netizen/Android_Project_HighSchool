@@ -29,6 +29,8 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.CampusView
         holder.binding.tvCampusName.setText(campus.getName());
         holder.binding.tvCampusLocation.setText(campus.getLocation());
         holder.binding.tvCampusDescription.setText(campus.getDescription());
+        holder.binding.tvFacilities.setText(campus.getFacilities());
+        holder.binding.tvRegistrationDate.setText(campus.getRegistrationDate());
 
         Glide.with(holder.itemView.getContext())
                 .load(campus.getImageUrl())

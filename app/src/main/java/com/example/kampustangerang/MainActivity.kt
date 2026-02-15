@@ -19,55 +19,63 @@ class MainActivity : AppCompatActivity() {
                 "Universitas Multimedia Nusantara (UMN)",
                 "Gading Serpong, Tangerang",
                 "Fokus pada bidang teknologi informasi dan komunikasi.",
-                "https://www.umn.ac.id/wp-content/uploads/2021/02/Gedung-UMN.jpg"
+                "Dr. Ninok Leksono, M.A.",
+                "https://www.umn.ac.id/wp-content/uploads/2021/02/Gedung-UMN.jpg",
+                listOf(
+                    Faculty("Fakultas Teknik & Informatika", "Dr. Eng. Niki Prastomo", listOf(
+                        StudyProgram("Informatika", "Marlin, S.Kom., M.T."),
+                        StudyProgram("Sistem Informasi", "Ririen Setiati, S.Kom., M.M.")
+                    )),
+                    Faculty("Fakultas Bisnis", "Dr. Florentina, S.E., M.Si.", listOf(
+                        StudyProgram("Manajemen", "Dr. Mohammad Annas"),
+                        StudyProgram("Akuntansi", "Stefanus Ariyanto, S.E., M.Ak.")
+                    ))
+                )
             ),
             Campus(
                 "Universitas Pelita Harapan (UPH)",
                 "Lippo Village, Karawaci, Tangerang",
                 "Salah satu universitas swasta ternama dengan berbagai program studi internasional.",
-                "https://www.uph.edu/wp-content/uploads/2023/05/UPH-Tower-scaled.jpg"
+                "Dr. (Hon) Jonathan L. Parapak, M.Eng.Sc.",
+                "https://www.uph.edu/wp-content/uploads/2023/05/UPH-Tower-scaled.jpg",
+                listOf(
+                    Faculty("Fakultas Hukum", "Dr. Velliana Tanaya, S.H., M.H.", listOf(
+                        StudyProgram("Ilmu Hukum", "Dr. Susi Susantijo")
+                    )),
+                    Faculty("Fakultas Kedokteran", "Prof. Dr. Dr. dr. Eka J. Wahjoepramono", listOf(
+                        StudyProgram("Kedokteran", "dr. Beverley W. Anne")
+                    ))
+                )
             ),
             Campus(
                 "BINUS University",
                 "Alam Sutera, Tangerang",
                 "Kampus modern dengan fokus pada inovasi dan teknologi.",
-                "https://bulatankata.com/wp-content/uploads/2022/10/binus-alsut.jpg"
-            ),
-            Campus(
-                "Prasetya Mulya Business School",
-                "BSD City, Tangerang Selatan",
-                "Terkenal dengan program bisnis dan kewirausahaan yang unggul.",
-                "https://www.prasetiyamulya.ac.id/wp-content/uploads/2021/08/Gedung-BSD.jpg"
+                "Dr. Nelly, S.Kom., M.M.",
+                "https://bulatankata.com/wp-content/uploads/2022/10/binus-alsut.jpg",
+                listOf(
+                    Faculty("School of Computer Science", "Fredy Purnomo, S.Kom., M.Kom.", listOf(
+                        StudyProgram("Computer Science", "Derwin Suhartono, S.Kom., M.T.I.")
+                    )),
+                    Faculty("School of Design", "Danendro Adi, S.Sn., M.Arts.", listOf(
+                        StudyProgram("Visual Communication Design", "Arsa Widitiarsa Utoyo")
+                    ))
+                )
             ),
             Campus(
                 "Universitas Pamulang (UNPAM)",
                 "Pamulang, Tangerang Selatan",
                 "Universitas dengan jumlah mahasiswa terbanyak yang mengedepankan pendidikan terjangkau.",
-                "https://unpam.ac.id/wp-content/uploads/2021/03/unpam-viktor.jpg"
-            ),
-            Campus(
-                "Swiss German University (SGU)",
-                "BSD City, Tangerang Selatan",
-                "Universitas internasional pertama dengan kurikulum berstandar Jerman.",
-                "https://sgu.ac.id/wp-content/uploads/2017/02/The-Prominence-Tower.jpg"
-            ),
-            Campus(
-                "Universitas Muhammadiyah Tangerang (UMT)",
-                "Cikokol, Tangerang",
-                "Pusat pendidikan tinggi Islam di jantung kota Tangerang.",
-                "https://umt.ac.id/wp-content/uploads/2022/01/gedung-umt.jpg"
-            ),
-            Campus(
-                "Atma Jaya Catholic University",
-                "BSD City, Tangerang Selatan",
-                "Kampus ketiga Atma Jaya yang fokus pada bidang teknik dan teknobiologi.",
-                "https://www.atmajaya.ac.id/wp-content/uploads/2019/07/Gedung-BSD.jpg"
-            ),
-            Campus(
-                "Monash University Indonesia",
-                "BSD City, Tangerang Selatan",
-                "Kampus pascasarjana dari universitas luar negeri pertama di Indonesia.",
-                "https://www.monash.edu/__data/assets/image/0004/2642737/indonesia-campus.jpg"
+                "Dr. E. Nurzaman AM., M.M., M.Si.",
+                "https://unpam.ac.id/wp-content/uploads/2021/03/unpam-viktor.jpg",
+                listOf(
+                    Faculty("Fakultas Ekonomi", "Dr. H. Endang Ruhiyat", listOf(
+                        StudyProgram("Manajemen", "Dr. Ali Maddinsyah")
+                    )),
+                    Faculty("Fakultas Teknik", "Syaiful Bakhri, S.T., M.Eng., Ph.D.", listOf(
+                        StudyProgram("Teknik Informatika", "Achmad Udin Zailani, S.Kom., M.Kom.")
+                    ))
+                )
             )
         )
 

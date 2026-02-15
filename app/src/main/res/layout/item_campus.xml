@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="12dp"
     app:cardElevation="4dp">
 
     <LinearLayout
@@ -29,26 +30,71 @@
                 android:id="@+id/tvCampusName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Campus Name"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:text="Universitas Multimedia Nusantara" />
 
             <TextView
                 android:id="@+id/tvCampusLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Location"
-                android:textColor="@android:color/darker_gray" />
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                tools:text="Gading Serpong, Tangerang" />
 
             <TextView
                 android:id="@+id/tvCampusDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:ellipsize="end"
-                android:maxLines="2"
-                android:text="Short description of the campus..." />
+                android:textSize="14sp"
+                android:textColor="#424242"
+                tools:text="Fokus pada bidang teknologi informasi dan komunikasi." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fasilitas:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvFacilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="13sp"
+                android:textColor="#616161"
+                tools:text="Perpustakaan, Lab Komputer, Sport Center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tanggal Pendaftaran:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvRegistrationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="13sp"
+                android:textColor="#D32F2F"
+                tools:text="1 September - 31 Oktober 2023" />
+
         </LinearLayout>
 
     </LinearLayout>

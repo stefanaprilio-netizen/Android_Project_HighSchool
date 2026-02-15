@@ -18,15 +18,22 @@ class CampusAdapter(private val campusList: List<Campus>) :
 
     override fun onBindViewHolder(holder: CampusViewHolder, position: Int) {
         val campus = campusList[position]
-        holder.binding.tvCampusName.text = campus.name
-        holder.binding.tvCampusLocation.text = campus.location
-        holder.binding.tvCampusDescription.text = campus.description
+        holder.binding.apply {
+            tvCampusName.text = campus.name
+            tvRector.text = "Rektor: ${campus.rector}"
+            tvCampusLocation.text = campus.location
+            
+            val facultiesInfo = campus.faculties.joinToString("\n") { faculty ->
+                "• ${faculty.name} (Dekan: ${faculty.dean})\n  Prodi: ${faculty.studyPrograms.joinToString { it.name }}"
+            }
+            tvFacultiesSummary.text = facultiesInfo
 
-        Glide.with(holder.itemView.context)
-            .load(campus.imageUrl)
-            .placeholder(android.R.drawable.ic_menu_gallery)
-            .error(android.R.drawable.ic_menu_report_image)
-            .into(holder.binding.ivCampus)
+            Glide.with(holder.itemView.context)
+                .load(campus.imageUrl)
+                .placeholder(android.R.drawable.ic_menu_gallery)
+                .error(android.R.drawable.ic_menu_report_image)
+                .into(ivCampus)
+        }
     }
 
     override fun getItemCount(): Int = campusList.size
