@@ -7,6 +7,7 @@ data class Campus(
     val imageUrl: String,
     val facilities: String,
     val registrationDate: String,
+    val category: String = "Umum", // IPA, IPS, Bahasa, atau Umum
     val rector: String = "",
     val facultiesList: List<Faculty> = emptyList()
 )
