@@ -1,5 +1,6 @@
 package com.example.kampustangerang
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -30,6 +31,14 @@ class CampusAdapter(private val campusList: List<Campus>) :
                 .placeholder(android.R.drawable.ic_menu_gallery)
                 .error(android.R.drawable.ic_menu_report_image)
                 .into(ivCampus)
+
+            // Klik untuk detail
+            root.setOnClickListener {
+                val intent = Intent(holder.itemView.context, DetailCampusActivity::class.java).apply {
+                    putExtra("EXTRA_CAMPUS", campus)
+                }
+                holder.itemView.context.startActivity(intent)
+            }
         }
     }
 
